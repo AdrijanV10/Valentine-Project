@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+.hidden {
+    display: none !important;
+}
+
+.cat-img {
+    width: 200px;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+#cat4 {
+    position: absolute; /* This makes it "float" so it won't push other things */
+    top: 350px;          /* Adjust this to move it up or down */
+    left: 50%;          /* Move to middle of screen */
+    transform: translateX(-50%); /* Perfectly center it left-to-right */
+    width: 50px;
+    height: auto;
+    z-index: 10;        /* Make sure it stays in front of other things */
+}
+
+.text {
+    font-family: 'Playwrite NZ', cursive;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* This horizontally centers the buttons */
+    gap: 20px;               /* This keeps a nice space between them */
+    margin-top: 20px;        /* Pushes them away from the text/cat */
+    width: 100%;             /* Ensures it takes up the full width to center properly */
+    border: none;         /* This removes the black edge/border */
+    outline: none;        /* This removes the focus ring edge */
+    border-radius: 10px;  /* Your preferred rounded look */
+    cursor: pointer;
+}
+
+/* Specific styling for YES */
+#yesBtn {
+    background-color: #4CAF50; /* Nice Green */
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Grows slightly when hovered */
+}
+
+/* Specific styling for NO */
+#noBtn {
+    background-color: #ff4d4d; /* Nice Soft Red */
+    color: white;
+}
+
+#message2 {
+    position: absolute;
+    font-family: 'Playwrite NZ', cursive;
+    font-size: 10px;
+    text-align: center;
+    top: 400px;
+    color: #000000;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: auto;
+    z-index: 10;
+}
